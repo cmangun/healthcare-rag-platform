@@ -1,10 +1,18 @@
-"""Healthcare RAG Platform - Governance Module"""
-from .pii_detector import HIAAPHIDetector, PHICategory, DetectionConfidence
-from .cost_guard import CostGuard, CostGuardConfig, CostLimitExceededError
-from .audit_logger import AuditLogger, AuditEventType, init_audit_logger
+"""
+Healthcare RAG Governance
+
+Enterprise governance for healthcare RAG including HIPAA compliance,
+cost controls, audit logging, and safety guardrails.
+"""
+
+from .phi_detector import PHIDetector
+from .cost_guard import CostGuard
+from .audit_logger import AuditLogger
+from .guardrails import HealthcareGuardrails
 
 __all__ = [
-    "HIAAPHIDetector", "PHICategory", "DetectionConfidence",
-    "CostGuard", "CostGuardConfig", "CostLimitExceededError",
-    "AuditLogger", "AuditEventType", "init_audit_logger",
+    "PHIDetector",
+    "CostGuard",
+    "AuditLogger",
+    "HealthcareGuardrails",
 ]
