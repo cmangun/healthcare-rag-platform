@@ -6,9 +6,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![HIPAA Compliant](https://img.shields.io/badge/HIPAA-Compliant-green.svg)](#compliance)
 
-**Production-grade Retrieval-Augmented Generation platform for healthcare with HIPAA compliance, enterprise governance, and full audit capabilities.**
+Production-grade Retrieval-Augmented Generation platform for healthcare with HIPAA compliance, enterprise governance, and full audit capabilities.
 
-## 🎯 Business Impact
+## Business Impact
 
 | Metric | Improvement | How |
 |--------|-------------|-----|
@@ -19,7 +19,7 @@
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```mermaid
 flowchart TB
@@ -73,27 +73,27 @@ flowchart TB
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-### 🔒 HIPAA Safe Harbor Compliance
+### HIPAA Safe Harbor Compliance
 - Automatic detection of **18 PHI identifier types** (names, SSN, MRN, dates, etc.)
 - Real-time redaction before vector storage
 - Configurable blocking vs. anonymization policies
 - Audit trail for all PHI access
 
-### 💰 Enterprise Cost Controls
+### Enterprise Cost Controls
 - Per-request cost estimation with token counting
 - User-level rate limiting and budget caps
 - Global daily/monthly spending limits
 - Cost attribution by department/project
 
-### 📊 Immutable Audit Trail
+### Immutable Audit Trail
 - Hash-chain audit logging (tamper-evident)
 - Full request/response lineage tracking
 - 7-year retention support (HIPAA requirement)
 - Export to SIEM systems
 
-### 🔍 Hybrid Retrieval Pipeline
+### Hybrid Retrieval Pipeline
 - Dense retrieval (vector similarity via embeddings)
 - Sparse retrieval (BM25 keyword matching)
 - Reciprocal Rank Fusion (RRF) for result merging
@@ -101,7 +101,7 @@ flowchart TB
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.11+
@@ -156,7 +156,7 @@ gunicorn src.api.main:app -w 4 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:8000
 
 ---
 
-## 📖 Usage Examples
+## Usage Examples
 
 ### Basic RAG Query
 
@@ -208,7 +208,7 @@ else:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 healthcare-rag-platform/
@@ -239,7 +239,7 @@ healthcare-rag-platform/
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run all tests
@@ -254,7 +254,7 @@ pytest tests/test_phi_detector.py -v
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -270,13 +270,13 @@ Please ensure:
 
 ---
 
-## 📜 License
+## License
 
 MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-## 👤 Author
+## Author
 
 **Christopher Mangun** - Forward Deployed Engineer  
 - GitHub: [@cmangun](https://github.com/cmangun)
@@ -284,7 +284,7 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-## 🔗 Related Projects
+## Related Projects
 
 - [mlops-healthcare-platform](https://github.com/cmangun/mlops-healthcare-platform) - MLOps with FDA validation
 - [clinical-nlp-pipeline](https://github.com/cmangun/clinical-nlp-pipeline) - Medical NLP processing
