@@ -5,13 +5,13 @@ Enterprise governance for healthcare RAG including HIPAA compliance,
 cost controls, audit logging, and safety guardrails.
 """
 
-from .phi_detector import PHIDetector
+from .phi_detector import HIPAASafeHarborDetector
 from .cost_guard import CostGuard
 from .audit_logger import AuditLogger
 from .guardrails import HealthcareGuardrails
 
 __all__ = [
-    "PHIDetector",
+    "HIPAASafeHarborDetector",
     "CostGuard",
     "AuditLogger",
     "HealthcareGuardrails",
